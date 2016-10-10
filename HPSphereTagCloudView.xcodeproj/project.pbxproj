@@ -13,7 +13,7 @@
 		96E0559C1DAB7B7500DADA45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E0559A1DAB7B7500DADA45 /* Main.storyboard */; };
 		96E0559E1DAB7B7500DADA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E0559D1DAB7B7500DADA45 /* Assets.xcassets */; };
 		96E055A11DAB7B7500DADA45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E0559F1DAB7B7500DADA45 /* LaunchScreen.storyboard */; };
-		96E055AE1DAB7D3600DADA45 /* HPSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E055AD1DAB7D3600DADA45 /* HPSphereView.m */; };
+		E27382E01DABD052007668DA /* HPSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27382DF1DABD052007668DA /* HPSphereView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +27,10 @@
 		96E0559D1DAB7B7500DADA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E055A01DAB7B7500DADA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E055A21DAB7B7500DADA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96E055AA1DAB7C7E00DADA45 /* HPPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HPPoint.h; path = HPSphereView/HPPoint.h; sourceTree = "<group>"; };
-		96E055AB1DAB7CCF00DADA45 /* HPMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HPMatrix.h; path = HPSphereView/HPMatrix.h; sourceTree = "<group>"; };
-		96E055AC1DAB7D3600DADA45 /* HPSphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPSphereView.h; path = HPSphereView/HPSphereView.h; sourceTree = "<group>"; };
-		96E055AD1DAB7D3600DADA45 /* HPSphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPSphereView.m; path = HPSphereView/HPSphereView.m; sourceTree = "<group>"; };
+		E27382DC1DABD052007668DA /* HPMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPMatrix.h; sourceTree = "<group>"; };
+		E27382DD1DABD052007668DA /* HPPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPoint.h; sourceTree = "<group>"; };
+		E27382DE1DABD052007668DA /* HPSphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSphereView.h; sourceTree = "<group>"; };
+		E27382DF1DABD052007668DA /* HPSphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPSphereView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,7 @@
 		96E055851DAB7B7500DADA45 = {
 			isa = PBXGroup;
 			children = (
+				96E055A81DAB7C1D00DADA45 /* HPSphereView */,
 				96E055901DAB7B7500DADA45 /* HPSphereTagCloudView */,
 				96E0558F1DAB7B7500DADA45 /* Products */,
 			);
@@ -63,7 +64,6 @@
 		96E055901DAB7B7500DADA45 /* HPSphereTagCloudView */ = {
 			isa = PBXGroup;
 			children = (
-				96E055A81DAB7C1D00DADA45 /* HPSphereView */,
 				96E055941DAB7B7500DADA45 /* AppDelegate.h */,
 				96E055951DAB7B7500DADA45 /* AppDelegate.m */,
 				96E055971DAB7B7500DADA45 /* ViewController.h */,
@@ -88,12 +88,13 @@
 		96E055A81DAB7C1D00DADA45 /* HPSphereView */ = {
 			isa = PBXGroup;
 			children = (
-				96E055AA1DAB7C7E00DADA45 /* HPPoint.h */,
-				96E055AB1DAB7CCF00DADA45 /* HPMatrix.h */,
-				96E055AC1DAB7D3600DADA45 /* HPSphereView.h */,
-				96E055AD1DAB7D3600DADA45 /* HPSphereView.m */,
+				E27382DC1DABD052007668DA /* HPMatrix.h */,
+				E27382DD1DABD052007668DA /* HPPoint.h */,
+				E27382DE1DABD052007668DA /* HPSphereView.h */,
+				E27382DF1DABD052007668DA /* HPSphereView.m */,
 			);
 			name = HPSphereView;
+			path = HPSphereTagCloudView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +172,7 @@
 				96E055991DAB7B7500DADA45 /* ViewController.m in Sources */,
 				96E055961DAB7B7500DADA45 /* AppDelegate.m in Sources */,
 				96E055931DAB7B7500DADA45 /* main.m in Sources */,
-				96E055AE1DAB7D3600DADA45 /* HPSphereView.m in Sources */,
+				E27382E01DABD052007668DA /* HPSphereView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +329,7 @@
 				96E055A71DAB7B7500DADA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
